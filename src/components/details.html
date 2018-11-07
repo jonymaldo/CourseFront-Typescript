@@ -1,0 +1,26 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Inicio</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Libro</li>
+    </ol>
+</nav>
+<div class="container">
+    <div class="row" id="books">
+
+    </div>
+</div>
+<script id="templateBooks" type="text/ractive">
+
+    <div class="col-3">
+        {{title}}
+    
+        <p class="text">{{publisher}}</p>
+        <p class="text">{{publishedDate}}</p>
+    </div>
+    <div class="col-6">
+        <img class="card-img img-top" src={{imageLinks.smallThumbnail}}/>
+    </div>
+
+</script>
